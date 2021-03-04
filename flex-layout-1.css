@@ -1,0 +1,51 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #fff;
+  color: #444;
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.wrapper > * {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.header {
+  flex: 1 1 100%;
+}
+.sidebar {
+  flex: 1 1 30%;
+  align-self: stretch;
+}
+
+.content {
+  flex: 1 1 60%;
+  margin-left: 3%;
+}
+
+.footer {
+  flex: 1 1 100%;
+}
