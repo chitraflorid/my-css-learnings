@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.wrapper {
+  font-family: 'PT Sans';
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ff4136;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  border: 1px solid black;
+  max-width: 800px;
+  grid-template-columns: 4fr 8fr;
+  grid-gap: 20px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.content, .sidebar, .ad {
+  font-size: 14px;
+  border: 1px dotted #0074d9;
+  background-color: rgba(#0074d9, .1);
+}
+
+p {
+  padding: 0; 
+  margin: 0;
+}
+
+.wrapper,
+.grid,
+.sidebar,
+.content,
+.ad {
+  position: relative;
+}
+
+.wrapper:after,
+.grid:after, 
+.sidebar:after, 
+.content:after,
+.ad:after {
+  position: absolute;
+  text-transform: uppercase;
+  left: 0;
+  top: 0;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.grid:after {
+  content: 'grid';
+  background-color: #222;
+}
+
+.sidebar:after {
+  content: 'sidebar';
+  background-color: #0074d9;
+}
+
+.ad:after {
+  content: 'ad';
+  background-color: #0074d9;
+}
+
+.content:after {
+  content: 'content';
+  background-color: #0074d9;
+}
+
+.wrapper:after {
+  content: 'wrapper';
+  background-color: #ff4136;
+}
+
+.content {
+  grid-column: 1 / -1;
+}
