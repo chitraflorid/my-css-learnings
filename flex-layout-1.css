@@ -33,7 +33,7 @@ h1, p {
   align-items: center;
 }
 
-.header {
+.header, .footer {
   flex: 1 1 100%;
 }
 .sidebar {
@@ -44,8 +44,4 @@ h1, p {
 .content {
   flex: 1 1 60%;
   margin-left: 3%;
-}
-
-.footer {
-  flex: 1 1 100%;
 }
