@@ -12,7 +12,7 @@
   display: grid;
   border: 1px solid black;
   max-width: 800px;
-  grid-template-columns: 4fr 8fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
   padding: 30px;
   background-color: rgba(0, 0, 0, .05);
